@@ -3,6 +3,7 @@ import React from 'react';
 import {BiHomeAlt, BiUser} from 'react-icons/bi'
 import {FaAtom, FaBook} from 'react-icons/fa'
 import {BsClipboardData, BsBriefcase, BsChat} from 'react-icons/bs'
+import { GrContact } from "react-icons/gr";
 
 import { Link } from 'react-scroll'
 
@@ -61,7 +62,7 @@ const Nav = () => {
           smooth={true}
           spy={true}
              className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center  '>
-          <BsBriefcase/>
+          <GrContact/>
 
           </Link>
         </div>
