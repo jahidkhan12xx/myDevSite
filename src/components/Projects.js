@@ -7,19 +7,19 @@ import Lottie from "lottie-react";
 const Projects = () => {
     return (
         <div className=' section' id="projects">
-            <div className=" container mx-auto flex justify-between">
-                <div className=" max-w-[50%]">
+            <div className=" container mx-auto md:flex justify-between">
+                <div className=" md:max-w-[50%]">
                 <motion.h2
-              variants={fadeIn("right", 0.2)}
+              variants={fadeIn("right", 0.3)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className=" font-bold text-6xl"
+              className=" font-bold text-3xl md:text-6xl"
             >
               # What work I did ?
             </motion.h2>
             <motion.p className=" mt-12 "
-              variants={fadeIn("right", 0.5)}
+              variants={fadeIn("right", 0.4)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -35,7 +35,7 @@ const Projects = () => {
              animationData={animation}></Lottie>
           </motion.div>
                 </div>
-                <motion.div variants={fadeIn("left", 0.7)}
+                <motion.div variants={fadeIn("left", 0.5)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }} className=" mt-32 flex gap-8 flex-col">

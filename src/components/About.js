@@ -8,14 +8,14 @@ import Lottie from "lottie-react";
 const About = () => {
   return (
     <div className=' section' id='about'>
-      <div className=' container mx-auto flex justify-center items-center'>
+      <div className=' container mx-auto md:flex justify-center items-center'>
         <div className=' max-w-[50%]'>
         <motion.h2
-              variants={fadeIn("right", 0.2)}
+              variants={fadeIn("down", 0.5)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className=" font-bold text-6xl"
+              className=" font-bold text-3xl md:text-6xl"
             >
               # About Me
             </motion.h2>

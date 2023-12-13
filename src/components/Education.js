@@ -8,19 +8,19 @@ import Lottie from "lottie-react";
 const Education = () => {
     return (
         <div className=' section' id="education">
-            <div className=" container mx-auto flex justify-between gap-6 ">
-               <div className="max-w-[50%]">
+            <div className=" container mx-auto md:flex justify-between gap-4 ">
+               <div className="md:max-w-[50%]">
                <motion.h2
-              variants={fadeIn("right", 0.2)}
+              variants={fadeIn("right", 0.3)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className=" font-bold text-6xl"
+              className=" font-bold text-3xl md:text-6xl"
             >
               # Education
             </motion.h2>
             <motion.p className=" mt-12 "
-              variants={fadeIn("right", 0.2)}
+              variants={fadeIn("right", 0.4)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -32,7 +32,7 @@ const Education = () => {
           </div>
                 </div> 
                <motion.div
-               variants={fadeIn("left", 0.7)}
+               variants={fadeIn("left", 0.5)}
                initial="hidden"
                whileInView={"show"}
                viewport={{ once: false, amount: 0.7 }} className=" mt-20">

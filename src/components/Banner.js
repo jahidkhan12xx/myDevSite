@@ -6,6 +6,7 @@ import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
 
 const Banner = () => {
   return (
@@ -53,23 +54,23 @@ const Banner = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{once:false, amount:0.7}} className=" flex max-w-max gap-x-6  gap-4 justify-start items-center mb-12 mx-auto md:mx-0">
-              <button className=" btn btn-lg">Contact Me</button>
-              <a href="#" className="text-gradient btn-link">
-                My Portfolio
-              </a>
+              <Link to="contact" smooth={true}><button className=" btn btn-lg">Contact Me</button></Link>
+              <Link to="projects" smooth={true}  className="text-gradient btn-link cursor-pointer">
+                My Projects
+              </Link>
             </motion.div>
             <motion.div 
             variants={fadeIn('up',0.7)}
             initial='hidden'
             whileInView={'show'}
             viewport={{once:false, amount:0.7}} className=" flex text-3xl gap-x-6 max-w-max mx-auto md:mx-0">
-              <a href="#">
+              <a href="https://github.com/jahidkhan12xx">
                 <FaGithub />
               </a>
-              <a href="#">
+              <a href="https://www.facebook.com/jahid.khanx">
                 <FaFacebook />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/md-zahid-hasan-khan-8a38711a6/">
                 <FaLinkedin />
               </a>
             </motion.div>

@@ -22,7 +22,7 @@ const App = () => {
       <Education></Education>
       <Projects></Projects>
       <Contact />
-      <div className='h-[4000px]'></div>
+      
     </div>
   );
 };

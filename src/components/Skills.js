@@ -8,20 +8,20 @@ import StarRatings from "react-star-ratings";
 const Skills = () => {
   return (
     <div className=" section" id="skills">
-      <div className=" container mx-auto flex justify-between">
+      <div className=" container mx-auto md:flex justify-between">
         <div className=" flex justify-center items-center flex-col">
           <div>
             <motion.h2
-              variants={fadeIn("right", 0.2)}
+              variants={fadeIn("right", 0.5)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className=" font-bold text-6xl"
+              className=" font-bold text-3xl md:text-6xl"
             >
               # What Do I Know
             </motion.h2>
             <motion.p className=" my-12"
-              variants={fadeIn("right", 0.2)}
+              variants={fadeIn("right", 0.5)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -42,6 +42,7 @@ const Skills = () => {
           viewport={{ once: false, amount: 0.7 }} className=" flex justify-center items-center flex-col gap-2">
             <h2>React JS</h2>
             <StarRatings
+            starRatedColor=" yellow"
               rating={4}
               starDimension="40px"
               starSpacing="15px"
@@ -54,6 +55,7 @@ const Skills = () => {
           viewport={{ once: false, amount: 0.7 }} className=" flex justify-center items-center flex-col gap-2">
             <h2>Javascript</h2>
             <StarRatings
+            starRatedColor=" yellow"
               rating={3.603}
               starDimension="40px"
               starSpacing="15px"
@@ -66,6 +68,7 @@ const Skills = () => {
           viewport={{ once: false, amount: 0.7 }} className=" flex justify-center items-center flex-col gap-2">
             <h2>Node JS</h2>
             <StarRatings
+            starRatedColor=" yellow"
               rating={3.403}
               starDimension="40px"
               starSpacing="15px"
@@ -78,6 +81,7 @@ const Skills = () => {
           viewport={{ once: false, amount: 0.7 }} className=" flex justify-center items-center flex-col gap-2">
             <h2>Express</h2>
             <StarRatings
+            starRatedColor=" yellow"
               rating={3.403}
               starDimension="40px"
               starSpacing="15px"
@@ -90,6 +94,7 @@ const Skills = () => {
           viewport={{ once: false, amount: 0.7 }} className=" flex justify-center items-center flex-col gap-2">
             <h2>MongoDB</h2>
             <StarRatings
+            starRatedColor=" yellow"
               rating={3.403}
               starDimension="40px"
               starSpacing="15px"
